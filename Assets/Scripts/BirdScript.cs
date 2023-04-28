@@ -18,5 +18,20 @@ public class BirdScript : MonoBehaviour
         {
             rb.AddForce(Vector2.up * 300f);
         }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            rb.AddForce(Vector2.right * 300f);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            rb.AddForce(Vector2.left * 300f);
+        }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            rb.AddForce(Vector2.down * 300f);
+        }
     }
 }
